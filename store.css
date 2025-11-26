@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pangolin&family=Poppins&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=KoHo:wght@500;700&family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Georgian:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+@font-face {
+    font-family: 'fontname';
+    src: url(font/alk_tommaso.otf);
+}
+
+@font-face {
+    font-family: 'fontname1';
+    src: url(font/123Wave-Regular-30904523489.ttf);
+}
+
+@font-face {
+    font-family: 'fontname2';
+    src: url(font/3d_unicode-82801733631.ttf);
+}
+
+@font-face {
+    font-family: 'fontname3';
+    src: url(font/SS\ GEO\ CREEPSTER-65469100585.otf);
+}
+
+@font-face {
+    font-family: 'fontname4';
+    src: url(font/SS\ GEO\ CHALK\ \(AllCaps\)-25543181111.otf);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+}
+
+/* Header -------------------Header-------------------Header-------------------------Header----------------------- */
+/* Header --------------Header--------------------------Header------------------------Header--------------------- */
+/* Header ---------------Header---------------------------Header------------------------Header-------------------- */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: rgb(232, 219, 219);
+    box-shadow: 0 0 10px #422680;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 5%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #422680;
+    font-size: 40px;
+    border: 2px solid #f54952;
+    padding: 3px 15px 3px 5px;
+}
+
+.logo span {
+    color: #f54952;
+}
+
+.logo-pi {
+    font-family: "Chewy", system-ui;
+}
+
+.logo img {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 6em;
+}
+
+nav a {
+    color: #422680;
+    font-size: 23px;
+    letter-spacing: 3px;
+    color: blueviolet;
+    font-family: 'fontname1';
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: blueviolet;
+    transition: 0.6s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.menu {
+    width: 45px;
+    border: 2px solid #422680;
+    color: gray;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    height: 45px;
+    display: none;
+    cursor: pointer;
+}
+
+/* Home Section ---------------------------------------------------------------------------------------------------------- */
+/* Home Section ---------------------------------------------------------------------------------------------------------- */
+/* Home Section ---------------------------------------------------------------------------------------------------------- */
+
+.home {
+    background: rgb(226, 218, 218);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home h1 {
+    font-size: 50px;
+    color: #422680;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: 'fontname', sans-serif;
+}
+
+.home h1 .span1 {
+    font-size: 60px;
+    color: #f54952;
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    font-family: 'fontname', sans-serif;
+}
+
+.img2 {
+    height: 600px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* Product Section ----------------------------------------------------------------------------------------------- */
+/* Product Section ----------------------------------------------------------------------------------------------- */
+/* Product Section ----------------------------------------------------------------------------------------------- */
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.heading {
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: blueviolet;
+    font-family: 'fontname';
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    width: 100%;
+    padding: 60px 5% 20px 5%;
+}
+
+.card-container>* {
+    width: 30%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgb(232, 219, 219);
+    outline: .05rem solid gray;
+    outline-offset: -0.5rem;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.card h3 {
+    margin-top: 20px;
+    color: #1d3557;
+    font-size: 29px;
+    letter-spacing: 2px;
+    font-family: 'fontname4';
+}
+
+.card img {
+    height: 250px;
+}
+
+.card:hover {
+    outline: .105rem solid #422680;
+    outline-offset: 0;
+}
+
+.card .stars {
+    display: flex;
+    gap: .6em;
+    margin-bottom: 8px;
+}
+
+.card i {
+    color: #457b9d;
+}
+
+.price {
+    display: flex;
+    gap: 0.5em;
+}
+
+.card .price p {
+    font-size: 35px;
+    color: #ec9a9a;
+    font-family: 'fontname3';
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Contact ------------------------------------------------------------------------------------------- */
+/* Section Contact ------------------------------------------------------------------------------------------- */
+/* Section Contact ------------------------------------------------------------------------------------------- */
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.map {
+    height: 450px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgb(232, 219, 219);
+    outline: .05rem solid gray;
+    outline-offset: -0.5rem;
+}
+
+.title-con {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 8px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: purple;
+    font-family: "ALK Life", sans-serif;
+    font-weight: 600;
+}
+
+.map img {
+    height: 400px;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fa-facebook-square {
+    position: absolute;
+    
+    right: 35%;
+    bottom: 230px;
+    box-shadow: 0 0 10px;
+    cursor: pointer;
+    color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    transition: 0.6s;
+}
+
+.fa-facebook-square:hover {
+    transform: scale(1.2);
+}
+
+.number {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.contact-info {
+    font-family: "Momo Signature", cursive;
+}
+
+.ri-phone-line {
+    font-size: 20px;
+    color: red;
+}
+
+.fa-viber {
+    color: purple;
+    font-size: 20px;
+}
+
+.fa-square-whatsapp {
+    font-size: 21.5px;
+    color: green;
+}
+
+/* Footer --------------Footer-------------Footer-------------Footer--------------Footer-----------Footer-------- */
+/* Footer --------------Footer-------------Footer-------------Footer--------------Footer-----------Footer-------- */
+/* Footer --------------Footer-------------Footer-------------Footer--------------Footer-----------Footer-------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 40px;
+    background: rgb(232, 219, 219);
+}
+
+footer span {
+    color: orange;
+    font-size: 16px;
+}
+
+footer div {
+    font-size: 12px;
+}
+
+.icons {
+    display: flex;
+    gap: 0.5rem;
+    padding: 2px;
+}
+
+.icons>* {
+    font-size: 16px;
+    transition: 0.6s;
+}
+
+.icons>*:hover {
+    transform: scale(1.2);
+}
+
+.fa-linkedin {
+    color: #0A66C2;
+}
+
+.fa-square-facebook {
+    color: #0866FF;
+}
+
+.fa-github {
+    color: black;
+}
