@@ -1,36 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pangolin&family=Poppins&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+/* <p> Contact-info - Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=KoHo:wght@500;700&family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Georgian:wght@100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+/* Logo Masks - Font */
 
 @font-face {
     font-family: 'fontname';
     src: url(font/alk_tommaso.otf);
 }
 
+/* Home h1, Home h1 .span1, Product Heading - Font */
+
 @font-face {
     font-family: 'fontname1';
     src: url(font/123Wave-Regular-30904523489.ttf);
 }
 
+/* Nav A - Font */
+
 @font-face {
-    font-family: 'fontname2';
-    src: url(font/3d_unicode-82801733631.ttf);
+    font-family: 'fontname4';
+    src: url(font/SS\ GEO\ CHALK\ \(AllCaps\)-25543181111.otf);
 }
+
+/* Card H3 - Font */
 
 @font-face {
     font-family: 'fontname3';
     src: url(font/SS\ GEO\ CREEPSTER-65469100585.otf);
 }
 
-@font-face {
-    font-family: 'fontname4';
-    src: url(font/SS\ GEO\ CHALK\ \(AllCaps\)-25543181111.otf);
-}
+/* Card .price p  - Font*/
+
+
+/* All Code ------------------ All Code ------------------- All Code ---------------------- */
+/* All Code ------------------ All Code ------------------- All Code ---------------------- */
+/* All Code ------------------ All Code ------------------- All Code ---------------------- */
 
 
 * {
@@ -65,7 +70,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 5%;
+    padding: 20px 5%;
 }
 
 .logo {
@@ -73,7 +78,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #422680;
-    font-size: 40px;
+    font-size: 35px;
     border: 2px solid #f54952;
     padding: 3px 15px 3px 5px;
 }
@@ -87,48 +92,64 @@ header {
 }
 
 .logo img {
-    width: 50px;
+    width: 40px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-nav {
+nav ul {
     display: flex;
-    gap: 6em;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    height: 50px;
 }
 
-nav a {
-    color: #422680;
-    font-size: 23px;
-    letter-spacing: 3px;
+nav ul li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    font-size: 27px;
     color: blueviolet;
     font-family: 'fontname1';
 }
 
-nav a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1.5px;
-    background: blueviolet;
-    transition: 0.6s;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-.menu {
-    width: 45px;
-    border: 2px solid #422680;
-    color: gray;
-    border-radius: 5px;
-    position: absolute;
-    right: 15px;
-    height: 45px;
-    display: none;
+label #menuA,
+label #menuB {
+    font-size: 25px;
+    float: right;
+    margin-right: 10px;
     cursor: pointer;
+    display: none;
+    border: 2px solid #422680;
+    border-radius: 6px;
+    color: #422680;
+    width: 38px;
+    height: 38px;
 }
+
+
+
+#check {
+    display: none;
+}
+
+/* When nav is open */
+nav ul.open {
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+
+/* MenuB initially hidden */
+#menuB {
+    display: none;
+}
+
+
 
 /* Home Section ---------------------------------------------------------------------------------------------------------- */
 /* Home Section ---------------------------------------------------------------------------------------------------------- */
@@ -300,7 +321,7 @@ nav a:hover::after {
 
 .fa-facebook-square {
     position: absolute;
-    
+
     right: 35%;
     bottom: 230px;
     box-shadow: 0 0 10px;
